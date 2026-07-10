@@ -36,6 +36,11 @@ else:
     else:
         ALLOWED_HOSTS = []
 
+# Automatically trust Render's external hostname if deployed on Render
+render_host = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
+if render_host:
+    ALLOWED_HOSTS.append(render_host)
+
 
 # Application definition
 
