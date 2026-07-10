@@ -1,0 +1,21 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Database
+db.sqlite3
+db.sqlite3-journal
+
+# Environment variables (MUST be kept out of Git)
+.env
+
+# Virtual environment
+myenv/
+venv/
+env/
+.env/
+
+# OS files
+.DS_Store
+Thubs.db
